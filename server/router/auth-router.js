@@ -7,6 +7,10 @@ router.get("/", (req, res) => {
   res.status(200).send("Hello, Router!");
 });
 
+// router.route("/").get((req, res) => {
+//   res.status(200).send("Hello, Router!");
+// });
+
 
 // app.get("/register", (req, res) => {
 //   res.status(200).send("Registration page");
