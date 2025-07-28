@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const router = require('./router/auth-router');
 
+app.use(express.json()); // Middleware to parse JSON bodies
+
 app.use("/api/auth", router);
 
 
