@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = 'mongodb://127.0.0.1:27017/mern_admin'; // Replace with your MongoDB URI
+const dbURI = process.env.MONGODB_URI; // Replace with your MongoDB URI
 
 // mongoose.connect(dbURI);
 
