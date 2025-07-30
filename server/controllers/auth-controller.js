@@ -37,7 +37,7 @@ const register = async (req, res) => {
       phone
     });
 
-  res.status(201).json({ message: "User registered successfully", user: userCreated });
+  res.status(201).json({ message: "User registered successfully", user: userCreated, token: await userCreated.generateToken() });
     } catch (err) {
         res.status(500).json("Internal Server Error");
         console.log(err);
