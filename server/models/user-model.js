@@ -41,9 +41,7 @@ userSchema.pre('save',async function(next) {
         next(error);
 }}
 );
-
 // json web token
-
 userSchema.methods.generateToken = async function() {
   try {
       return jwt.sign({
